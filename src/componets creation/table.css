@@ -1,0 +1,20 @@
+.ta, .tr, .td,.th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 30%;
+    height: 30px;
+    text-align: center;
+}
+.cards{
+    border:2px solid black;
+    width: 25%;
+    text-align: center;
+}
+.cards p{
+    font-size: 30px;
+}
+.subcards{
+    
+    margin-top: 10px;
+    background-color: rgb(178, 170, 170);
+}
