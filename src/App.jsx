@@ -1,8 +1,9 @@
 import Lists from "./Props/list";
-import Mainheading from "./Props/headings";
+import Mainheading,{SubHeading} from "./Props/headings";
 import Buttons from "./Props/buttons";
 import Image from "./Props/image";
 import { recipeData } from "./data/recipeData.js";
+
 
 const Dishes = () => {
   return(
@@ -11,13 +12,13 @@ const Dishes = () => {
     recipeData.map(eachRecipe=>{
       return(
         <div key={eachRecipe.id} >
-          <Mainheading heading={eachRecipe.name}   />
+          <Mainheading Mainhead={eachRecipe.name}   />
           <Image source={eachRecipe.image} width={200}  height={200}/>
-          <Mainheading heading={"ingredients required"}  />
+          <SubHeading subhead={"ingredients required"}></SubHeading>
           <Lists list={eachRecipe.ingredients}/>
-          <Mainheading heading={"instructions required"}  />
+          <SubHeading subhead={"Instructions for cooking"}></SubHeading>
           <Lists list={eachRecipe.instructions}  />
-          <Buttons  text={"Start preparation"}   />
+          <Buttons  text={"Start preparation"}  />
         </div>
 
         

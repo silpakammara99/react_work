@@ -1,19 +1,14 @@
-
-
-
-const Lists=(prop)=>{
-    const{list}=prop; 
-
- <ol>
-    <>
-    {
-   list.map(each=>{
-<li>{each}</li>
-   })
-    
-    }
-    </>
-
-      </ol>
-}
-export default Lists
+const Lists = (prop) => {
+  const { list } = prop;
+  return (
+     <ol>
+      <>{
+         list.map((each,index)=>{
+            return <li key={index}>{each}</li>
+         })
+      }
+      </>
+     </ol>
+  );
+};
+export default Lists;
