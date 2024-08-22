@@ -1,34 +1,33 @@
- 
-import Lists from "./Props/list";
-import Mainheading,{SubHeading} from "./Props/headings";
-import Buttons from "./Props/buttons";
-import Image from "./Props/image";
-import { recipeData } from "./data/recipeData.js";
+// eslint-disable-next-line no-unused-vars
+import {Greet,Greet1, Greet2} from "./componets creation/greetings/greet"
+// eslint-disable-next-line no-unused-vars
+import style from "./componets creation/greetings/greet.module.css"
+import CustomeCards from "./componets creation/boostrap/bootstrap"
+import { CardsData } from "./data/cardsdata"
 
 
-const Dishes = () => {
+
+const App =()=>{
   return(
-    < >
-  {
-    recipeData.map(eachRecipe=>{
-      return(
-        <div key={eachRecipe.id} >
-          <Mainheading Mainhead={eachRecipe.name}   />
-          <Image source={eachRecipe.image} width={200}  height={200}/>
-          <SubHeading subhead={"ingredients required"}></SubHeading>
-          <Lists list={eachRecipe.ingredients}/>
-          <SubHeading subhead={"Instructions for cooking"}></SubHeading>
-          <Lists list={eachRecipe.instructions}  />
-          <Buttons  text={"Start preparation"}  />
-        </div>
+    <>
+    {
+      CardsData.map(each=>{
+        return(
+          <>
+        <CustomeCards title={each.title} text={each.text} source={each.img}/>
+        </>
+        )
+      })
+    }
+ 
+      {/* <Greet/><br></br>
+      <Greet1/><br></br>
+      <Greet2/>
+      <div className={style.wish}>
+        <h3>this is heading tag</h3>
+      </div> */}
+      </>
+  )
+}
 
-        
-      )
-    })
-
-  }
-
-    </>
-  )}
-
-export default Dishes;
+export default App
