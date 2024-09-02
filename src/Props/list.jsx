@@ -1,14 +1,14 @@
 const Lists = (prop) => {
   const { list } = prop;
   return (
-     <ol>
+     <h6><ol>
       <>{
          list.map((each,index)=>{
             return <li key={index}>{each}</li>
          })
       }
       </>
-     </ol>
+     </ol></h6>
   );
 };
 export default Lists;
