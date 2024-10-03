@@ -12,3 +12,18 @@ const Lists = (prop) => {
   );
 };
 export default Lists;
+
+
+export const Unorder=(props)=>{
+   const {data}=props;
+   return(
+      <ul>
+         <>{
+            data.map((each,index)=>{
+               return <li key={index}>{each}</li>
+            })
+         }
+         </>
+      </ul>
+   )
+}

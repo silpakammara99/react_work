@@ -1,8 +1,10 @@
 
 
-const CustomImage=()=>{
+const CustomImage=(props)=>{
+const{source, alternaterText, width, height}=props;
+
     return(
-        <img src="http://clipart-library.com/new_gallery/28-282907_banana-svg-logo-png-banana-clip-art.png"/>
+        <img src={source} alt="alternateText" width={width} height={height}/>
     )
 }
 
