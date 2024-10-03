@@ -1,34 +1,11 @@
- 
-import Lists from "./Props/list";
-import Mainheading,{SubHeading} from "./Props/headings";
-import Buttons from "./Props/buttons";
-import Image from "./Props/image";
-import { recipeData } from "./data/recipeData.js";
+// import {Greet,Greet1, Greet2} from "./componets creation/greetings/greet"
+// import style from "./componets creation/greetings/greet.module.css"
+// import CustomeCards from "./componets creation/boostrap/bootstrap"
+// import { CardsData } from "./data/cardsdata"
+import Mounting from "./componets creation/life-cycle/render-mounting";
 
+const App = () => {
+  return <Mounting color="red"/>
+};
 
-const Dishes = () => {
-  return(
-    < >
-  {
-    recipeData.map(eachRecipe=>{
-      return(
-        <div key={eachRecipe.id} >
-          <Mainheading Mainhead={eachRecipe.name}   />
-          <Image source={eachRecipe.image} width={200}  height={200}/>
-          <SubHeading subhead={"ingredients required"}></SubHeading>
-          <Lists list={eachRecipe.ingredients}/>
-          <SubHeading subhead={"Instructions for cooking"}></SubHeading>
-          <Lists list={eachRecipe.instructions}  />
-          <Buttons  text={"Start preparation"}  />
-        </div>
-
-        
-      )
-    })
-
-  }
-
-    </>
-  )}
-
-export default Dishes;
+export default App;
