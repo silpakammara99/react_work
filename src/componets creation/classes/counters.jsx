@@ -1,42 +1,39 @@
 import { Component } from "react";
-//import { errorToasts, successToasts } from "../toasts/toast-helpers";
+import { toast } from 'react-toastify';
 
-class Counter extends Component{
 
-    state={
-        count:0
+class CounterFile extends Component {
+  state = {
+    count: 0,
+  };
+  increment = () => {
+    this.setState({
+      count: this.state.count + 1,
     }
-    
-    Incrementing=()=>{
-     this.setState({
-        count:this.state.count+1,
-     })
-    }
+     
+);
+  };
+  decrement = () => {
+    this.setState({
+      count: this.state.count - 1,
+    });
+  };
 
-    Decrementing=()=>{
-        this.setState({
-            count:this.state.count-1
-        })
-    }
+  reset = () => {
+    this.setState({
+      count: 0,
+    });
+  };
 
-    Reseting=()=>{
-        this.setState({
-            count:0
-        })
-    }
-
-
-    render(){
-        return(
-            <>
-            <h1>Counter: {this.state.count}</h1>
-            <button onClick={this.Incrementing}>Increment:</button>
-            <button onClick={this.Decrementing}>Decrement</button>
-            <button onClick={this.Reseting}>Reset</button>            
-            </>
-        )
-    }
-
-
+  render() {
+    return (
+      <>
+        <h1>count: {this.state.count}</h1>
+        <button onClick={this.increment}>increment</button>
+        <button onClick={this.decrement}>decrement</button>
+        <button onClick={this.reset}>reset</button>
+      </>
+    );
+  }
 }
-export default Counter
+export default CounterFile;

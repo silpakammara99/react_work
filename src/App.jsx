@@ -4,6 +4,8 @@
 // import { CardsData } from "./data/cardsdata"
 // import FirstComponent from "./componets creation/boostrap/boostrap-component"
 // import DemoCarousel from "./componets creation/tasks/corousal"
+import CounterFile from "./componets creation/classes/counters"
+import Counter from "./componets creation/classes/counters"
 import YoutubeButton from "./componets creation/classes/youtube-button"
 
 
@@ -11,8 +13,9 @@ import YoutubeButton from "./componets creation/classes/youtube-button"
 const App =()=>{
   return(
     <>
-   <YoutubeButton/>
-  
+   {/* <YoutubeButton/> */}
+   {/* <Counter/> */}
+  <CounterFile/>
    
 </>
   )
