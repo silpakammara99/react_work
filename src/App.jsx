@@ -11,12 +11,14 @@ import MyCheckbox from "./componets creation/usestate-practice/checked";
 import { UseRefExample } from "./componets creation/hooks/useref-hook/useref-prac";
 import { UncontrolledComponent } from "./componets creation/hooks/uncontrolled components/uncontrolled-form";
 import { DataShowTable } from "./componets creation/datashow_table";
+import { ControlledForm } from "./componets creation/hooks/controlled component/controlled_validations";
 
 const App = () => {
   return(
 <> 
 
-<DataShowTable/>
+<ControlledForm/>
+{/* <DataShowTable/> */}
 {/* <UncontrolledComponent/> */}
 {/* <UseRefExample/> */}
 
