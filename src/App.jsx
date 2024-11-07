@@ -8,16 +8,25 @@ import Counter from "./componets creation/usestate-practice/useState_hook";
 import CustomTodo from './componets creation/usestate-practice/todolist';
 import DataChange from "./componets creation/usestate-practice/input_change";
 import MyCheckbox from "./componets creation/usestate-practice/checked";
+import { UseRefExample } from "./componets creation/hooks/useref-hook/useref-prac";
+import { UncontrolledComponent } from "./componets creation/hooks/uncontrolled components/uncontrolled-form";
+import { DataShowTable } from "./componets creation/datashow_table";
 
 const App = () => {
   return(
 <> 
+
+<DataShowTable/>
+{/* <UncontrolledComponent/> */}
+{/* <UseRefExample/> */}
+
+
 {/* <Mounting color="red"/> */}
 {/* <ParentComponet/> */}
 {/* <Counter/> */}
 {/* <CustomTodo/> */}
 {/* <DataChange/> */}
-<MyCheckbox/>
+{/* <MyCheckbox/> */}
 </>
   )
 };
