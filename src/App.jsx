@@ -12,12 +12,13 @@ import { UseRefExample } from "./componets creation/hooks/useref-hook/useref-pra
 import { UncontrolledComponent } from "./componets creation/hooks/uncontrolled components/uncontrolled-form";
 import { DataShowTable } from "./componets creation/datashow_table";
 import { ControlledForm } from "./componets creation/hooks/controlled component/controlled_validations";
+import { ReuseStateForm } from "./componets creation/hooks/controlled component/reuse_useState_validation";
 
 const App = () => {
   return(
 <> 
-
-<ControlledForm/>
+<ReuseStateForm/>
+{/* <ControlledForm/> */}
 {/* <DataShowTable/> */}
 {/* <UncontrolledComponent/> */}
 {/* <UseRefExample/> */}
