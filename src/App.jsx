@@ -16,15 +16,16 @@
 // import { UseEffectExample } from "./componets creation/hooks/useEffect hook/useEffect";
 import { UseEffectExample3 } from './componets creation/hooks/useEffect hook/useEffect_3';
 import { UseEffectExample2 } from './componets creation/hooks/useEffect hook/useEffect_eventlist';
-import { Stopwatch } from './componets creation/timer task/timer';
+import TabComponent from './componets creation/timer task/timer';
 
 const App = () => {
   return(
 <> 
-<Stopwatch/>
+<TabComponent/>
+{/* <Stopwatch/> */}
 {/* <UseEffectExample/> */}
 {/* <UseEffectExample2/> */}
-<UseEffectExample3/>
+{/* <UseEffectExample3/> */}
 {/* <ReuseStateForm/> */}
 {/* <ControlledForm/> */}
 {/* <DataShowTable/> */}
