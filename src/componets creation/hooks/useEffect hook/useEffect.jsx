@@ -41,7 +41,7 @@ export const UseEffectExample = () => {
       <button onClick={ageHandler}>agechange</button>
 
       {["products", "carts", "users"].map((each) => {
-        return <button onClick={() => changeHandler(each)}>{each}</button>;
+        return <button key={each} onClick={() => changeHandler(each)}>{each}</button>;
       })}
       {data.map((each) => {
         return <div key={each.id}>{JSON.stringify(each)}</div>;

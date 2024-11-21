@@ -21,7 +21,10 @@ import TabComponent from './componets creation/timer task/timer';
 const App = () => {
   return(
 <> 
-<TabComponent/>
+
+
+
+{/* <TabComponent/> */}
 {/* <Stopwatch/> */}
 {/* <UseEffectExample/> */}
 {/* <UseEffectExample2/> */}
