@@ -11,7 +11,7 @@ export const NavigationBar=()=>{
         
     }
     return(
-        <nav className="navbar navbar-expand-sm bg-light navbar-light">
+        <nav className="navbar navbar-expand-sm navbar-light" style={{ backgroundColor: 'skyblue' }}>
   <div className="container-fluid">
     <ul className="navbar-nav">
       <li className="nav-item" style={liStyle}>
@@ -20,10 +20,15 @@ export const NavigationBar=()=>{
       <li className="nav-item" style={liStyle}>
       <NavLink to={"/about"}>About</NavLink>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">
-          Link
-        </a>
+      <li className="nav-item" style={liStyle}>
+        <NavLink to={"/category"} >
+          Categories
+        </NavLink>
+      </li>
+      <li className="nav-item" style={liStyle}>
+        <NavLink to={"/products"} >
+          Products
+        </NavLink>
       </li>
       
     </ul>
