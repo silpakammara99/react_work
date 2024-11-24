@@ -16,6 +16,7 @@
 // import { UseEffectExample } from "./componets creation/hooks/useEffect hook/useEffect";
 import { UseEffectExample3 } from './componets creation/hooks/useEffect hook/useEffect_3';
 import { UseEffectExample2 } from './componets creation/hooks/useEffect hook/useEffect_eventlist';
+import CounterReducer from './componets creation/hooks/usereducer/basicexample';
 import TabComponent from './componets creation/timer task/timer';
 
 const App = () => {
@@ -23,7 +24,7 @@ const App = () => {
 <> 
 
 
-
+<CounterReducer/>
 {/* <TabComponent/> */}
 {/* <Stopwatch/> */}
 {/* <UseEffectExample/> */}
