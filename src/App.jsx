@@ -14,17 +14,27 @@
 // import { ControlledForm } from "./componets creation/hooks/controlled component/controlled_validations";
 // import { ReuseStateForm } from "./componets creation/hooks/controlled component/reuse_useState_validation";
 // import { UseEffectExample } from "./componets creation/hooks/useEffect hook/useEffect";
+import React from 'react';
 import { WithProfile } from './componets creation/hoc/withprofile';
 import { UseEffectExample3 } from './componets creation/hooks/useEffect hook/useEffect_3';
 import { UseEffectExample2 } from './componets creation/hooks/useEffect hook/useEffect_eventlist';
+import UseMemo from './componets creation/hooks/usememo/memorization';
 import CounterReducer from './componets creation/hooks/usereducer/basicexample';
 import TabComponent from './componets creation/timer task/timer';
+import Memory from './memory-tasks/memo';
+import UseMemoExam from './componets creation/hooks/usememo/usememoexam';
 
 const App = () => {
   return(
 <> 
 
-<WithProfile/>
+{/* <Memory/> */}
+
+<UseMemoExam/>
+{/* <UseMemo/> */}
+
+
+{/* <WithProfile/> */}
 {/* <CounterReducer/> */}
 {/* <TabComponent/> */}
 {/* <Stopwatch/> */}
