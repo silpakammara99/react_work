@@ -23,14 +23,18 @@ import CounterReducer from './componets creation/hooks/usereducer/basicexample';
 import TabComponent from './componets creation/timer task/timer';
 import Memory from './memory-tasks/memo';
 import UseMemoExam from './componets creation/hooks/usememo/usememoexam';
+import UseCallbackEx from './componets creation/hooks/usecallbacks/usecallback_ex';
 
 const App = () => {
   return(
 <> 
 
+
+<UseCallbackEx/>
+
 {/* <Memory/> */}
 
-<UseMemoExam/>
+{/* <UseMemoExam/> */}
 {/* <UseMemo/> */}
 
 

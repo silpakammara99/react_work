@@ -1,16 +1,23 @@
 
+import  React  from 'react';
+
 
 const Mainheading=(prop)=>{
     const{Mainhead}=prop;
-    return <h1>{Mainhead}</h1>
+    // console.log(Mainhead,"this is heaidng")
+    return(
+        <>
+        <h1>{Mainhead}</h1>
+        </>
+    )
+    
 }
  
-export default Mainheading
+export default React.memo(Mainheading)
 
+// export const SubHeading=(prop)=>{
+//     const{subhead}=prop;
+//     return  <h2>{subhead}</h2>
 
-export const SubHeading=(prop)=>{
-    const{subhead}=prop;
-    return  <h2>{subhead}</h2>
-
-}
+// }
 

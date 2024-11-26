@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { Link, NavLink, Outlet } from "react-router-dom"
 import { GlobalCounter } from "../navigations/navigationstack"
+import useAxios from "../hooks/customhooks/useAxios"
 
 
 
@@ -9,6 +10,9 @@ import { GlobalCounter } from "../navigations/navigationstack"
 export const CategoryScreen=()=>{
 
 const{dispatch}=useContext(GlobalCounter)
+
+const[products,error,loading]=useAxios('https://dummyjson.com/products/categories')
+console.log(products)
 
 
     const liStyle={

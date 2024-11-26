@@ -3,6 +3,7 @@ import { UseEffectExample } from "../hooks/useEffect hook/useEffect"
 import { UserDetails } from "../navigations/navigationstack"
 import { WithProfile } from "../hoc/withprofile"
 import WithCount from "../hoc/withcounter"
+import useAxios from "../hooks/customhooks/useAxios"
 // import { NavigationBar } from "../navbar/Navigationbar"
 
 
@@ -11,6 +12,16 @@ import WithCount from "../hoc/withcounter"
 
 
 const HomeScreen=(props)=>{
+    const[recipes,error,loading]=useAxios('https://dummyjson.com/recipes')
+console.log(recipes)
+    if(loading){
+        return<h3>please wait./.....</h3>
+    }
+ if(error){
+    return<h2>{JSON.stringify(error)}</h2>
+ }
+
+
 
 console.log(props)
 

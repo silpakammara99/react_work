@@ -1,19 +1,19 @@
+import React from "react";
 
+const CustomButton = (prop) => {
+  console.log("child re-render", prop.text);
+  const { text = "button", onPress = () => {}} = prop;
 
+//   const myPress = () => {
+//     onPress({ name: "John", salary: 10000 });
+//   };
 
-const CustomButton =(prop)=>{
-    const {text="button",onPress=()=>{},bgColor="green"}=prop
-    const buttonText="Click me" 
+  const buttonStyles = { backgroundColor: "red", color: "white" };
+  return (
+    <button style={buttonStyles} onClick={onPress}>
+      {text}
+    </button>
+  );
+};
 
-    const myPress=()=>{
-        onPress({name:"John",salary:10000})
-
-    }
-
-    const buttonStyles={backgroundColor:"red",color:"white"}
-    return(
-        <button style={buttonStyles}  onClick={myPress} >{text}</button>
-    )
-}
-
-export default CustomButton
+export default React.memo(CustomButton);
