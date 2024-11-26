@@ -14,6 +14,7 @@
 // import { ControlledForm } from "./componets creation/hooks/controlled component/controlled_validations";
 // import { ReuseStateForm } from "./componets creation/hooks/controlled component/reuse_useState_validation";
 // import { UseEffectExample } from "./componets creation/hooks/useEffect hook/useEffect";
+import { WithProfile } from './componets creation/hoc/withprofile';
 import { UseEffectExample3 } from './componets creation/hooks/useEffect hook/useEffect_3';
 import { UseEffectExample2 } from './componets creation/hooks/useEffect hook/useEffect_eventlist';
 import CounterReducer from './componets creation/hooks/usereducer/basicexample';
@@ -23,8 +24,8 @@ const App = () => {
   return(
 <> 
 
-
-<CounterReducer/>
+<WithProfile/>
+{/* <CounterReducer/> */}
 {/* <TabComponent/> */}
 {/* <Stopwatch/> */}
 {/* <UseEffectExample/> */}
