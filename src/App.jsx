@@ -24,13 +24,14 @@ import TabComponent from './componets creation/timer task/timer';
 import Memory from './memory-tasks/memo';
 import UseMemoExam from './componets creation/hooks/usememo/usememoexam';
 import UseCallbackEx from './componets creation/hooks/usecallbacks/usecallback_ex';
+import Promiseexam from './componets creation/promises-all-races/sample_file';
 
 const App = () => {
   return(
 <> 
 
-
-<UseCallbackEx/>
+<Promiseexam/>
+{/* <UseCallbackEx/> */}
 
 {/* <Memory/> */}
 
