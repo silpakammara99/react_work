@@ -25,12 +25,15 @@ import Memory from './memory-tasks/memo';
 import UseMemoExam from './componets creation/hooks/usememo/usememoexam';
 import UseCallbackEx from './componets creation/hooks/usecallbacks/usecallback_ex';
 import Promiseexam from './componets creation/promises-all-races/sample_file';
+import CrudExample from './componets creation/crudoperations/crud';
 
 const App = () => {
   return(
 <> 
 
-<Promiseexam/>
+<CrudExample/>
+
+{/* <Promiseexam/> */}
 {/* <UseCallbackEx/> */}
 
 {/* <Memory/> */}
